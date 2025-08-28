@@ -18,6 +18,11 @@ void AACCTV::BeginPlay()
 	
 }
 
+void AACCTV::EnforceFunc_Implementation(AActor* OwnerActor)
+{
+	//IIExecuterable::EnforceFunc_Implementation(Owner);
+}
+
 // Called every frame
 void AACCTV::Tick(float DeltaTime)
 {

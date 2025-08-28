@@ -3,11 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "IExecuterable.h"
 #include "GameFramework/Actor.h"
 #include "ACCTV.generated.h"
 
 UCLASS()
-class GOLDTAROGGMSURVIVAL_API AACCTV : public AActor
+class GOLDTAROGGMSURVIVAL_API AACCTV : public APawn, public IIExecuterable
 {
 	GENERATED_BODY()
 	
@@ -18,7 +19,7 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+	virtual void EnforceFunc_Implementation(AActor* Owner);
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

@@ -8,7 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422ff6e9-0aaf-4670-a1d8-293979422f07" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GoldTaroGGMSurvival.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoldTaroGGMSurvival.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP/BP_AMacbook.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP/BP_AMacbook.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP/BP_CCTV.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP/BP_CCTV.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP/InteractiveObj/BP_TEstButton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP/InteractiveObj/BP_TEstButton.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestMap.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +47,8 @@
     "Uproject.GoldTaroGGMSurvival.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -134,6 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1756168186463</updated>
       <workItem from="1756168188263" duration="177000" />
+      <workItem from="1756773964971" duration="2620000" />
     </task>
     <servers />
   </component>
@@ -143,5 +148,23 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

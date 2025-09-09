@@ -8,9 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422ff6e9-0aaf-4670-a1d8-293979422f07" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GoldTaroGGMSurvival.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoldTaroGGMSurvival.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Arts/Models/JengWooChair_glb/Materials/Material_001.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Arts/Models/JengWooChair_glb/Materials/Material_001.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Arts/Models/JengWooChair_glb/Textures/26870868-brown-leather-texture.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Arts/Models/JengWooChair_glb/Textures/26870868-brown-leather-texture.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP/BP_AMacbook.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP/BP_AMacbook.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP/BP_CCTV.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP/BP_CCTV.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP/InteractiveObj/BP_TEstButton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP/InteractiveObj/BP_TEstButton.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestMap.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +26,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://0" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/UMG/Public/Blueprint/UserWidget.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/UMG/Public/Components/Button.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/UMG/Public/Components/Image.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/GoldTaroGGMSurvival/GoldTaroGGMSurvival.Build.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -40,20 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Uproject.GoldTaroGGMSurvival.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Uproject.GoldTaroGGMSurvival.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="GoldTaroGGMSurvival" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -139,6 +142,8 @@
       <updated>1756168186463</updated>
       <workItem from="1756168188263" duration="177000" />
       <workItem from="1756773964971" duration="2620000" />
+      <workItem from="1756961633699" duration="9126000" />
+      <workItem from="1757377042574" duration="1402000" />
     </task>
     <servers />
   </component>

@@ -9,9 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="422ff6e9-0aaf-4670-a1d8-293979422f07" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GoldTaroGGMSurvival.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoldTaroGGMSurvival.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Arts/Models/JengWooChair_glb/Materials/Material_001.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Arts/Models/JengWooChair_glb/Materials/Material_001.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Arts/Models/JengWooChair_glb/Textures/26870868-brown-leather-texture.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Arts/Models/JengWooChair_glb/Textures/26870868-brown-leather-texture.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP/BP_AMacbook.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP/BP_AMacbook.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestMap.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,6 +141,7 @@
       <workItem from="1756773964971" duration="2620000" />
       <workItem from="1756961633699" duration="9126000" />
       <workItem from="1757377042574" duration="1402000" />
+      <workItem from="1757388533842" duration="1252000" />
     </task>
     <servers />
   </component>

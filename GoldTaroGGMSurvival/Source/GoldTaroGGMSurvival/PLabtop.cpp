@@ -32,3 +32,8 @@ void APLabtop::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 }
 
+void APLabtop::TurnOff()
+{
+	Super::TurnOff();
+}
+

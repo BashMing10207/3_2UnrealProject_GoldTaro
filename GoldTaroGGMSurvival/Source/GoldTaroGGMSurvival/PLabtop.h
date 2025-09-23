@@ -3,13 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FN_IElectronicInteractive.h"
 #include "IFNInteractivable.h"
 #include "GameFramework/Pawn.h"
 #include "PLabtop.generated.h"
 
 
 UCLASS(BlueprintType, Blueprintable)
-class GOLDTAROGGMSURVIVAL_API APLabtop : public APawn, public IIFNInteractivable
+class GOLDTAROGGMSURVIVAL_API APLabtop : public APawn, public IIFNInteractivable, public IFN_IElectronicInteractive
 {
 	GENERATED_BODY()
 
@@ -28,4 +29,5 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	virtual void TurnOff() override;
 };

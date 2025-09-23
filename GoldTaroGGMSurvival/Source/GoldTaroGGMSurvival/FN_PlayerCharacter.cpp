@@ -75,17 +75,17 @@ void AFN_PlayerCharacter::Interact()
 		ECC_Visibility,       // 흔히 Visibility 사용
 		Params
 	);
-		if (bHit)
-		{
-			if (OutHit.GetActor())
-			{
-				IIFNInteractivable* target = Cast<IIFNInteractivable>(OutHit.GetActor());
-				if (target)
-				{
-					IIFNInteractivable::Execute_Interact(OutHit.GetActor(),this);
-				}
-			}
-		}
+		// if (bHit)
+		// {
+		// 	if (OutHit.GetActor())
+		// 	{
+		// 		IIFNInteractivable* target = Cast<IIFNInteractivable>(OutHit.GetActor());
+		// 		if (target)
+		// 		{
+		// 			IIFNInteractivable::Execute_Interact(OutHit.GetActor(),nullptr,this);
+		// 		}
+		// 	}
+		// }
 	}
 	
 }

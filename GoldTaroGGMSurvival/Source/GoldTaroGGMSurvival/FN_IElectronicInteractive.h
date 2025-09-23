@@ -7,7 +7,7 @@
 #include "FN_IElectronicInteractive.generated.h"
 
 // This class does not need to be modified.
-UINTERFACE(MinimalAPI)
+UINTERFACE(BlueprintType)
 class UFN_IElectronicInteractive : public UInterface
 {
 	GENERATED_BODY()
@@ -23,7 +23,8 @@ class GOLDTAROGGMSURVIVAL_API IFN_IElectronicInteractive
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	void TurnOnInteractive();
+	void TurnOnEL();
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	void StopElectrinicInteractive();
+	void TurnOffEl();
+	
 };

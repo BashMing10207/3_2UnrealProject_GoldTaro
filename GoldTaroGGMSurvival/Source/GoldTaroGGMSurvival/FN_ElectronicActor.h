@@ -4,11 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "FN_IElectronicInteractive.h"
+#include "IFNInteractivable.h"
 #include "GameFramework/Actor.h"
 #include "FN_ElectronicActor.generated.h"
 
 UCLASS()
-class GOLDTAROGGMSURVIVAL_API AFN_ElectronicActor : public AActor,public IFN_IElectronicInteractive
+class GOLDTAROGGMSURVIVAL_API AFN_ElectronicActor : public AActor,public IFN_IElectronicInteractive,public IIFNInteractivable
 {
 	GENERATED_BODY()
 	

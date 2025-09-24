@@ -3,19 +3,18 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "BSItemObjBase.h"
-#include "IFNInteractivable.h"
+#include "FN_IElectronicInteractive.h"
 #include "GameFramework/Actor.h"
-#include "FN_InteractiveableObject.generated.h"
+#include "FN_ElectronicActor.generated.h"
 
 UCLASS()
-class GOLDTAROGGMSURVIVAL_API AFN_InteractiveableObject : public AActor,public IIFNInteractivable
+class GOLDTAROGGMSURVIVAL_API AFN_ElectronicActor : public AActor,public IFN_IElectronicInteractive
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AFN_InteractiveableObject();
+	AFN_ElectronicActor();
 
 protected:
 	// Called when the game starts or when spawned
@@ -25,6 +24,5 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	void Interact_Implementation(AFN_PlayerArm* arm,AActor* caller,ABSItemObjBase* &target) override;
-
+	virtual void TurnOffEl_Implementation() override;;
 };

@@ -1,7 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "PLabtop.h"
+
+#include "FN_playerRoomSubSystem.h"
+
 
 // Sets default values
 APLabtop::APLabtop()
@@ -15,7 +17,8 @@ APLabtop::APLabtop()
 void APLabtop::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	UFN_PlayerRoomSubSystem* playerRoom = GetWorld()->GetSubsystem<UFN_PlayerRoomSubSystem>();
+	playerRoom->AddElEvent(this);
 }
 
 // Called every frame

@@ -3,6 +3,7 @@
 
 #include "FN_ElectronicActor.h"
 
+#include "FN_Electronic_Slot.h"
 #include "FN_PlayerRoomSubSystem.h"
 
 // Sets default values
@@ -13,13 +14,27 @@ AFN_ElectronicActor::AFN_ElectronicActor()
 
 }
 
+void AFN_ElectronicActor::PostInitializeComponents()
+{
+	
+
+	
+	Super::PostInitializeComponents();
+
+}
+
+
 // Called when the game starts or when spawned
 void AFN_ElectronicActor::BeginPlay()
 {
 	Super::BeginPlay();
-
 	UFN_PlayerRoomSubSystem* playerRoom = GetWorld()->GetSubsystem<UFN_PlayerRoomSubSystem>();
-	playerRoom->AddElEvent(this);
+	if (playerRoom)
+	{
+		OwnerElectricSlot4 = playerRoom->ElectricSlot;
+		if (OwnerElectricSlot4 != nullptr)
+			OwnerElectricSlot4->AddElEvent(this);
+	}
 }
 
 // Called every frame

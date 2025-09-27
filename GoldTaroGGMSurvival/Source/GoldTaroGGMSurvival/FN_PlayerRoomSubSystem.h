@@ -7,32 +7,41 @@
 #include "Subsystems/WorldSubsystem.h"
 #include "FN_PlayerRoomSubSystem.generated.h"
 
+class AFN_Electronic_Slot;
 /**
  * 
  */
-DECLARE_DYNAMIC_MULTICAST_DELEGATE(Fbaeshdelegate);
-UCLASS()
+UCLASS(BlueprintTYpe)
 
 class GOLDTAROGGMSURVIVAL_API UFN_PlayerRoomSubSystem : public UWorldSubsystem
 {
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(BlueprintAssignable)
-	Fbaeshdelegate OnTurnOff;
+	
+	TObjectPtr<AFN_Electronic_Slot> ElectricSlot;
+public:
+	
+	void InitElectronic(AFN_Electronic_Slot* el)
+	{
+		ElectricSlot = el;
+	}
 
-	UPROPERTY(BlueprintReadWrite,EditAnywhere)
-	TArray<TScriptInterface<IFN_IElectronicInteractive>> ElectricArray;
+	UFUNCTION(BlueprintCallable,Blueprintable)
+	AFN_Electronic_Slot* GetElectronicSlot()
+	{
+		if (ElectricSlot)
+		return ElectricSlot;
+
+#if UE_EDITOR
+
+		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, "ElectricSlot_and_your_mom_are_Null");
+#endif 
+		
+		return nullptr;
+	};
+	
 
 	
-public:
-	UFUNCTION(BlueprintCallable)
-	void AddElEvent(TScriptInterface<IFN_IElectronicInteractive> iterface1);
-	// void AddStopEvent(void* method);
-
-	UFUNCTION(BlueprintCallable)
-	void DoTurnOff();
-	UFUNCTION(BlueprintCallable)
-	void DOTurnOn();
 	
 };

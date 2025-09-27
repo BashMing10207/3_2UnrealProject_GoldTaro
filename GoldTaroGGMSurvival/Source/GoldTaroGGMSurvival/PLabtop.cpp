@@ -2,6 +2,7 @@
 
 #include "PLabtop.h"
 
+#include "FN_Electronic_Slot.h"
 #include "FN_playerRoomSubSystem.h"
 
 
@@ -16,9 +17,9 @@ APLabtop::APLabtop()
 // Called when the game starts or when spawned
 void APLabtop::BeginPlay()
 {
-	Super::BeginPlay();
 	UFN_PlayerRoomSubSystem* playerRoom = GetWorld()->GetSubsystem<UFN_PlayerRoomSubSystem>();
-	playerRoom->AddElEvent(this);
+	playerRoom->GetElectronicSlot()->AddElEvent(this);
+	Super::BeginPlay();
 }
 
 // Called every frame

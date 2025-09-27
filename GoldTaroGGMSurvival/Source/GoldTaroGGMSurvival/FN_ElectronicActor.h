@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "FN_Electronic_Slot.h"
 #include "FN_IElectronicInteractive.h"
 #include "IFNInteractivable.h"
 #include "GameFramework/Actor.h"
@@ -19,11 +20,18 @@ public:
 
 protected:
 	// Called when the game starts or when spawned
+	virtual void PostInitializeComponents() override;
 	virtual void BeginPlay() override;
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void TurnOffEl_Implementation() override;;
+	virtual void TurnOffEl_Implementation() override;\
+
+public:
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Blueprintable)
+	TObjectPtr<AFN_Electronic_Slot> OwnerElectricSlot3;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,Blueprintable)
+	TObjectPtr<AFN_Electronic_Slot> OwnerElectricSlot4;
 };

@@ -21,7 +21,10 @@ class GOLDTAROGGMSURVIVAL_API IIFN_ElectricContains
 	GENERATED_BODY()
 public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	bool UseEnergy(int cost);
-	// UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	// void 
+	void UseEnergy(int cost, bool& isOff);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void SetEnergy(int newEnergy, int& remainingEnergy);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void GetEnergy(int& currentEnergy);
+	
 };

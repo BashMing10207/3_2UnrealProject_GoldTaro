@@ -7,23 +7,4 @@
 // {
 // 	OnTurnOff.AddDynamic(method);
 // }
-void UFN_PlayerRoomSubSystem::AddElEvent(TScriptInterface<IFN_IElectronicInteractive> interface1)
-{
-	ElectricArray.Add(interface1);
-}
 
-void UFN_PlayerRoomSubSystem::DoTurnOff()
-{
-	for (int i = 0; i < ElectricArray.Num(); i++)
-	{
-		ElectricArray[i].GetInterface()->Execute_TurnOffEl(ElectricArray[i].GetObject());
-	}
-}
-
-void UFN_PlayerRoomSubSystem::DOTurnOn()
-{
-	for (int i = 0; i < ElectricArray.Num(); i++)
-	{
-		ElectricArray[i].GetInterface()->Execute_TurnOnEL(ElectricArray[i].GetObject());
-	}
-}

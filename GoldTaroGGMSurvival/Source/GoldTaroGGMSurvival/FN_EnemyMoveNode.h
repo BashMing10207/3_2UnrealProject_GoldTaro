@@ -23,8 +23,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
-	virtual void OnConstruction(const FTransform& Transform) override;
+	// //virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
+	// virtual void OnConstruction(const FTransform& Transform) override;
 
 public:
 	UPROPERTY(EditAnywhere,BLueprintReadWrite)

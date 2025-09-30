@@ -32,7 +32,7 @@ AFN_PlayerArm::AFN_PlayerArm()
 void AFN_PlayerArm::BeginPlay()
 {
 	Super::BeginPlay();
-	PhysArmCompo->GrabComponent(ArmTarget,NAME_None,ArmTarget->GetComponentLocation(),true);
+	//PhysArmCompo->GrabComponentAtLocation(ArmTarget,NAME_None,ArmTarget->GetComponentLocation(),true);
 
 
 	//BodyJoint->UpdateConstraintFrames();	
